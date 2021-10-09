@@ -9,7 +9,6 @@ if __name__ != '__main__':
     app.logger.handlers = gunicorn_logger.handlers
     app.logger.setLevel(gunicorn_logger.level)
     app.logger.debug("THIS IS A TEST")
-    app.listing_data = load_listings_data()
         
 # Main Route
 @app.route("/")
